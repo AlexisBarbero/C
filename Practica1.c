@@ -69,5 +69,62 @@ o sobresaliente (10). Se debe mostrar un mensaje de error si la nota ingresada n
 Este programa debe hacerse de dos maneras diferentes: con if secuenciales y con if-else
 anidados.
  */
+/* 
+char * condicion(int nota);
+
+int main (){
+    int nota;
+
+    //Pido la nota del alumno
+    printf("Ingrese la nota del alumno: ");
+    scanf("%d", &nota);
+    
+    // Condicion While para pedirle un numero valido
+    while (nota < 0 || nota > 10)
+    {
+        printf("Ingrese un valor valido de nota entre el 0 y el 10: ");
+        scanf("%d", &nota);
+    }
+    
+    // Imprimo por pantalla la nota del alumno 
+    printf("La condicion del alumno es: %s",condicion(nota));
+    return 0;
+}
+
+char * condicion(int nota){
+
+    if (nota < 6)
+    {
+        return "insuficiente";
+    }
+    else if (nota == 6)
+    {
+        return "aprobado";
+    }
+    else if (nota == 7)
+    {
+        return "bueno";
+    }
+    else if (nota == 8)
+    {
+        return "muy bueno";
+    }
+    else if (nota == 9)
+    {
+        return "distinguido";
+    }
+    else
+    {
+        return "sobresaliente";
+    }
+    
+} */
+
+
+
+
+
+
+
 
 
